@@ -1,0 +1,98 @@
+# タイツ風動画字幕リスト
+
+## 使用方法
+動画作成時に、以下の字幕を1行ずつコピペしてください。
+
+---
+
+[字幕1] 皆さん、こんにちは。タイツです。
+[字幕2] 今日は2025年11月19日の米国株と日本株の最新ニュースをお届けします。
+[字幕3] まず、市場全体の動向から見ていきましょう。
+[字幕4] それでは、個別のニュースを見ていきましょう。
+[字幕5] 【ニュース1】Jet2 reports record profits, announces London Gatwick expansion
+[画像6] https://www.investing.com/news/company-news/jet2-reports-record-profits-announces-london-gatwick-expansion-93CH-4366754
+[字幕7] Jet2は2025年度の過去最高利益を報告し、ロンドン・ガトウィック空港での事業拡大を発表しました。
+[字幕8] 航空業界の回復基調を背景に収益基盤を強化し、将来的な成長戦略を明確化しています([Investing.com](https://www.investing.com/news/company-news/jet2-reports-record-profits-announces-london-gatwick-expansion-93CH-4366754))。
+[字幕9] 市場への影響を見てみましょう。
+[字幕10] 増益発表により株価上昇圧力。
+[字幕11] 空港拡張による収益基盤強化、持続的成長期待。
+[字幕12] 【ニュース2】NKT lifts 2025 outlook after record Q3 earnings and strong project wins
+[画像13] https://www.investing.com/news/earnings/nkt-lifts-2025-outlook-after-record-q3-earnings-and-strong-project-wins-4366753
+[字幕14] NKTは2025年度の業績見通しを上方修正し、Q3で過去最高の利益を報告しました。
+[字幕15] 大型プロジェクトの受注が好調で、今後の成長期待が高まっています([Investing.com](https://www.investing.com/news/earnings/nkt-lifts-2025-outlook-after-record-q3-earnings-and-strong-project-wins-4366753))。
+[字幕16] 市場への影響を見てみましょう。
+[字幕17] 好決算による株価上昇期待。
+[字幕18] 受注基盤の拡大で安定成長の見込み。
+[字幕19] 【ニュース3】China bans Japanese seafood as diplomatic dispute deepens
+[画像20] https://www.investing.com/news/economy-news/china-bans-japanese-seafood-as-diplomatic-dispute-deepens-4366751
+[字幕21] 中国政府は日本産海産物の輸入を禁止し、両国間の外交摩擦が一段と激化しています。
+[字幕22] これにより地域経済や貿易に悪影響を及ぼす可能性が高まっています([Investing.com](https://www.investing.com/news/economy-news/china-bans-japanese-seafood-as-diplomatic-dispute-deepens-4366751))。
+[字幕23] 市場への影響を見てみましょう。
+[字幕24] 輸出停止による業績悪化懸念で株価下落圧力。
+[字幕25] 貿易摩擦解消の見通しが立たなければ業績回復困難。
+[字幕26] 【ニュース4】Japan stocks lower at close of trade; Nikkei 225 down 0.33%
+[画像27] https://www.investing.com/news/stock-market-news/japan-stocks-lower-at-close-of-trade-nikkei-225-down-033-4366749
+[字幕28] 2025年11月19日の日本株式市場は日経225指数が0.33%下落。
+[字幕29] 国内外の経済指標や地政学的リスクが投資家心理に影響を与えています([Investing.com](https://www.investing.com/news/stock-market-news/japan-stocks-lower-at-close-of-trade-nikkei-225-down-033-4366749))。
+[字幕30] 市場への影響を見てみましょう。
+[字幕31] 投資家のリスク回避姿勢強化、調整局面。
+[字幕32] 地政学リスクの解消次第で回復見込み。
+[字幕33] 【ニュース5】Telus stock rating upgraded by National Bank Financial on valuation
+[画像34] https://www.investing.com/news/analyst-ratings/telus-stock-rating-upgraded-by-national-bank-financial-on-valuation-93CH-4366748
+[字幕35] カナダの通信大手Telusの株式評価がNational Bank Financialにより引き上げられました。
+[字幕36] 適正評価を反映し、投資家の注目が高まっています([Investing.com](https://www.investing.com/news/analyst-ratings/telus-stock-rating-upgraded-by-national-bank-financial-on-valuation-93CH-4366748))。
+[字幕37] 市場への影響を見てみましょう。
+[字幕38] 格付け引き上げによる買い圧力。
+[字幕39] 通信需要増加による安定成長期待。
+[字幕40] 【ニュース6】LG Electronics India stock initiated at Overweight by JPMorgan on consumer spending outlook
+[画像41] https://www.investing.com/news/analyst-ratings/lg-electronics-india-stock-initiated-at-overweight-by-jpmorgan-on-consumer-spending-outlook-93CH-4366747
+[字幕42] JPMorganがLG Electronics India株を新規「オーバーウェイト」評価でカバレッジを開始。
+[字幕43] インドの消費支出増加を背景に成長期待が高まっています([Investing.com](https://www.investing.com/news/analyst-ratings/lg-electronics-india-stock-initiated-at-overweight-by-jpmorgan-on-consumer-spending-outlook-93CH-4366747))。
+[字幕44] 市場への影響を見てみましょう。
+[字幕45] 格付け発表による買い需要増。
+[字幕46] インド市場の拡大を背景に持続的成長。
+[字幕47] 【ニュース7】Telus stock rating upgraded to Outperform by National Bank Financial
+[画像48] https://www.investing.com/news/analyst-ratings/telus-stock-rating-upgraded-to-outperform-by-national-bank-financial-93CH-4366746
+[字幕49] National Bank FinancialがTelusの株式評価を「アウトパフォーム」に引き上げ、投資家の関心がさらに高まっています([Investing.com](https://www.investing.com/news/analyst-ratings/telus-stock-rating-upgraded-to-outperform-by-national-bank-financial-93CH-4366746))。
+[字幕50] 市場への影響を見てみましょう。
+[字幕51] 格付け引き上げによる買い圧力。
+[字幕52] 安定的な収益成長期待。
+[字幕53] 【ニュース8】Jefferies initiates Tamburi Investment Partners stock with Buy rating
+[画像54] https://www.investing.com/news/analyst-ratings/jefferies-initiates-tamburi-investment-partners-stock-with-buy-rating-93CH-4366745
+[字幕55] JefferiesがTamburi Investment Partners株に対して「買い」評価で新規カバレッジを開始。
+[字幕56] 成長ポテンシャルを踏まえた投資推奨です([Investing.com](https://www.investing.com/news/analyst-ratings/jefferies-initiates-tamburi-investment-partners-stock-with-buy-rating-93CH-4366745))。
+[字幕57] 市場への影響を見てみましょう。
+[字幕58] 格付け発表による株価上昇期待。
+[字幕59] 投資事業の持続的成長が見込まれる。
+[字幕60] 【ニュース9】Bitcoin price today: ticks up near $91k after 7-mth low as Fed caution persists
+[画像61] https://www.investing.com/news/cryptocurrency-news/bitcoin-price-today-ticks-up-near-91k-after-7mth-low-as-fed-caution-persists-4366724
+[字幕62] ビットコイン価格は7ヶ月ぶりの安値付近から約9.1万ドルに反発しました。
+[字幕63] FRBの慎重な金融政策姿勢が市場心理に影響を与えています([Investing.com](https://www.investing.com/news/cryptocurrency-news/bitcoin-price-today-ticks-up-near-91k-after-7mth-low-as-fed-caution-persists-4366724))。
+[字幕64] 市場への影響を見てみましょう。
+[字幕65] 価格の反発とボラティリティ継続。
+[字幕66] 規制状況次第で市場の方向性が左右。
+[字幕67] 【ニュース10】Gunsynd enters term sheet for 10% stake in Canadian gold project
+[画像68] https://www.investing.com/news/company-news/gunsynd-enters-term-sheet-for-10-stake-in-canadian-gold-project-93CH-4366756
+[字幕69] Gunsyndはカナダの金鉱山プロジェクトの10%持分取得に向けた基本合意書を締結。
+[字幕70] 資源セクターでの戦略的投資拡大を示しています([Investing.com](https://www.investing.com/news/company-news/gunsynd-enters-term-sheet-for-10-stake-in-canadian-gold-project-93CH-4366756))。
+[字幕71] 市場への影響を見てみましょう。
+[字幕72] 投資発表による株価押し上げ。
+[字幕73] プロジェクト成功で持続的な利益増加。
+[字幕74] 【ニュース11】First development resources to begin rare-earth exploration in December
+[画像75] https://www.investing.com/news/company-news/first-development-resources-to-begin-rareearth-exploration-in-december-93CH-4366755
+[字幕76] First Development Resourcesは2025年12月からレアアース探索を開始します。
+[字幕77] 戦略的資源の確保が進む中、テクノロジー分野への波及効果が期待されます([Investing.com](https://www.investing.com/news/company-news/first-development-resources-to-begin-rareearth-exploration-in-december-93CH-4366755))。
+[字幕78] 市場への影響を見てみましょう。
+[字幕79] 探索開始の発表による株価上昇材料。
+[字幕80] 資源確保成功による収益基盤強化。
+[字幕81] 【ニュース12】Japan stocks lower at close of trade; Nikkei 225 down 0.33% (重複)
+[画像82] 画像URLを挿入
+[字幕83] 【ニュース13】Telus stock rating upgraded by National Bank Financial on valuation (重複)
+[画像84] 画像URLを挿入
+[字幕85] 【ニュース14】LG Electronics India stock initiated at Overweight by JPMorgan on consumer spending outlook (重複)
+[画像86] 画像URLを挿入
+[字幕87] 【ニュース15】Telus stock rating upgraded to Outperform by National Bank Financial (重複)
+[画像88] 画像URLを挿入
+[字幕89] 以上、今日のニュースをお届けしました。
+[字幕90] それでは、また次回お会いしましょう。
+[字幕91] タイツでした。

@@ -1,0 +1,29 @@
+[0.00s] Starting V7.2 News Report System...
+[0.00s] Google Service Account JSON not found. Drive upload disabled.
+[0.97s] Stock data fetched: ['ダウ平均株価', 'ナスダック総合指数', 'S&P 500', '日経平均株価']
+[1.25s] News items fetched: 15
+[1.25s] Starting report generation...
+[1.25s] Generating market overview...
+[9.86s] Generating deep dive analysis for 15 news items...
+[9.86s] Processing news item 1: Fugees Member Sentenced to 14 Years for Campaign Donation Scheme
+[29.88s] Processing news item 2: Microsoft’s Brad Smith Warns of Tech Job Loss in Seattle from Progressive Taxes
+[69.59s] Processing news item 3: SpaceX’s Starship Booster Appears to Burst Apart in Ground Test
+[99.25s] Processing news item 4: Politician to Question Oxford University Over Harassment Record
+[117.99s] Processing news item 5: Poland Sells Debut Bonds Linked to New Interbank Benchmark Rate
+[160.73s] Processing news item 6: White House Ukraine Plan Is Shameless and Should Be Rejected
+[194.44s] Processing news item 7: Saylor’s Preferreds Boom Comes Into Question as Bitcoin Slumps
+[233.72s] Processing news item 8: UK Defense Firm Babcock Pursues Warship Deals Amid Strong Demand
+[264.85s] Processing news item 9: Two Teens Plead Not Guilty to Charges Over London Tube Hack
+[283.48s] Processing news item 10: Treasuries Set for Biggest Gain in Weeks As Stocks Slump
+[315.66s] Processing news item 11: Meesho Eyes $6 Billion Valuation With December India IPO
+[346.77s] Processing news item 12: I Traded Jet Lag for Sea Days on a 14-Night Cruise From Rome to New York
+[364.95s] Processing news item 13: 24 White Elephant Gifts That Everyone Will Fight For
+[413.41s] Processing news item 14: The 25 Best Gifts for Travelers, According to Jet-Setting Experts
+[446.13s] Processing news item 15: 6 of the Best Wealth Management Firms: Well-Known Fiduciary Investment Companies to Consider
+[477.96s] Generating conclusion...
+[511.00s] Report generation completed.
+[511.01s] Generating video script...
+[650.27s] Generating subtitles...
+[771.14s] Saved local file: output/20251123_01:37/20251123_01:37_report.md
+[771.14s] Saved local file: output/20251123_01:37/20251123_01:37_script.txt
+[771.14s] Saved local file: output/20251123_01:37/20251123_01:37_subtitles.txt

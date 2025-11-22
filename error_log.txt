@@ -1,0 +1,78 @@
+/Users/okb/Downloads/news_bot/src/config.py:9: ResourceWarning: unclosed file <_io.TextIOWrapper name='/Users/okb/Downloads/news_bot/execution.log' mode='a' encoding='UTF-8'>
+  logging.basicConfig(
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+INFO:ExecutionLogger:[0.00s] Starting V7.2 News Report System...
+INFO:src.services.llm_service:LLM Service initialized with provider: gemini
+WARNING:ExecutionLogger:[0.00s] Google Service Account JSON not found. Drive upload disabled.
+INFO:src.collectors.stock_collector:Fetched data for ダウ平均株価: {'close': 46245.41, 'change': 493.15, 'change_pct': 1.08, 'symbol': '^DJI'}
+INFO:src.collectors.stock_collector:Fetched data for ナスダック総合指数: {'close': 22273.08, 'change': 195.03, 'change_pct': 0.88, 'symbol': '^IXIC'}
+INFO:src.collectors.stock_collector:Fetched data for S&P 500: {'close': 6602.99, 'change': 64.23, 'change_pct': 0.98, 'symbol': '^GSPC'}
+INFO:src.collectors.stock_collector:Fetched data for 日経平均株価: {'close': 48625.88, 'change': -1198.06, 'change_pct': -2.4, 'symbol': '^N225'}
+INFO:ExecutionLogger:[1.03s] Stock data fetched: ['ダウ平均株価', 'ナスダック総合指数', 'S&P 500', '日経平均株価']
+INFO:src.collectors.news_collector:Fetched 15 articles from NewsAPI.
+INFO:ExecutionLogger:[1.27s] News items fetched: 15
+INFO:ExecutionLogger:[1.27s] Starting report generation...
+INFO:ExecutionLogger:[1.27s] Generating market overview...
+ERROR:src.services.llm_service:LLM Generation failed with gemini: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash-exp
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-exp
+Please retry in 41.159936457s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+}
+violations {
+}
+, retry_delay {
+  seconds: 41
+}
+]
+ERROR:src.bot:❌ エラーが発生しました: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash-exp
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-exp
+Please retry in 41.159936457s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+}
+violations {
+}
+, retry_delay {
+  seconds: 41
+}
+]
+ERROR:ExecutionLogger:[1.48s] Critical Failure: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash-exp
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash-exp
+Please retry in 41.159936457s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+}
+violations {
+}
+, retry_delay {
+  seconds: 41
+}
+]
+INFO:ExecutionLogger:Logs saved to execution_log.txt
+F
+======================================================================
+FAIL: test_pipeline_without_drive (__main__.TestNoDriveConfig)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/okb/.pyenv/versions/3.10.13/lib/python3.10/unittest/mock.py", line 1379, in patched
+    return func(*newargs, **newkeywargs)
+  File "/Users/okb/Downloads/news_bot/tests/verify_no_drive.py", line 79, in test_pipeline_without_drive
+    mock_say.assert_any_call(text="✅ レポート生成が完了しました！", thread_ts="thread_ts_test")
+  File "/Users/okb/.pyenv/versions/3.10.13/lib/python3.10/unittest/mock.py", line 1000, in assert_any_call
+    raise AssertionError(
+AssertionError: mock(text='✅ レポート生成が完了しました！', thread_ts='thread_ts_test') call not found
+
+----------------------------------------------------------------------
+Ran 1 test in 3.284s
+
+FAILED (failures=1)

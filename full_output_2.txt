@@ -1,0 +1,60 @@
+/Users/okb/Downloads/news_bot/src/config.py:9: ResourceWarning: unclosed file <_io.TextIOWrapper name='/Users/okb/Downloads/news_bot/execution.log' mode='a' encoding='UTF-8'>
+  logging.basicConfig(
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+
+--- Running Pipeline with NO Drive Credentials ---
+INFO:ExecutionLogger:[0.00s] Starting V7.2 News Report System...
+[0.00s] Starting V7.2 News Report System...
+WARNING:ExecutionLogger:[0.00s] Google Service Account JSON not found. Drive upload disabled.
+[0.00s] Google Service Account JSON not found. Drive upload disabled.
+INFO:ExecutionLogger:[0.00s] Stock data fetched: ['ナスダック総合指数']
+[0.00s] Stock data fetched: ['ナスダック総合指数']
+INFO:ExecutionLogger:[0.00s] News items fetched: 1
+[0.00s] News items fetched: 1
+INFO:ExecutionLogger:[0.00s] Starting report generation...
+[0.00s] Starting report generation...
+INFO:ExecutionLogger:[0.00s] Generating market overview...
+[0.00s] Generating market overview...
+INFO:ExecutionLogger:[0.00s] Generating deep dive analysis for 1 news items...
+[0.00s] Generating deep dive analysis for 1 news items...
+INFO:ExecutionLogger:[0.00s] Processing news item 1: Test News
+[0.00s] Processing news item 1: Test News
+INFO:ExecutionLogger:[0.00s] Generating conclusion...
+[0.00s] Generating conclusion...
+INFO:ExecutionLogger:[0.00s] Report generation completed.
+[0.00s] Report generation completed.
+INFO:ExecutionLogger:[0.00s] Generating video script...
+[0.00s] Generating video script...
+INFO:ExecutionLogger:[0.00s] Generating subtitles...
+[0.00s] Generating subtitles...
+INFO:ExecutionLogger:[0.00s] Saved local file: output/20251123/1763827927.043608_report.md
+[0.00s] Saved local file: output/20251123/1763827927.043608_report.md
+INFO:ExecutionLogger:[0.00s] Saved local file: output/20251123/1763827927.043608_script.txt
+[0.00s] Saved local file: output/20251123/1763827927.043608_script.txt
+INFO:ExecutionLogger:[0.00s] Saved local file: output/20251123/1763827927.043608_subtitles.txt
+[0.00s] Saved local file: output/20251123/1763827927.043608_subtitles.txt
+INFO:ExecutionLogger:Logs saved to execution_log.txt
+INFO:ExecutionLogger:[0.00s] Saved local file: output/20251123/1763827927.043608_log.txt
+[0.00s] Saved local file: output/20251123/1763827927.043608_log.txt
+INFO:ExecutionLogger:[0.00s] Uploaded to Slack: 1763827927.043608_report.md
+[0.00s] Uploaded to Slack: 1763827927.043608_report.md
+INFO:ExecutionLogger:[0.00s] Uploaded to Slack: 1763827927.043608_script.txt
+[0.00s] Uploaded to Slack: 1763827927.043608_script.txt
+INFO:ExecutionLogger:[0.00s] Uploaded to Slack: 1763827927.043608_subtitles.txt
+[0.00s] Uploaded to Slack: 1763827927.043608_subtitles.txt
+INFO:ExecutionLogger:[0.00s] Uploaded to Slack: 1763827927.043608_log.txt
+[0.00s] Uploaded to Slack: 1763827927.043608_log.txt
+--- Pipeline Finished ---
+
+[Debug] mock_say calls:
+call(text='⏳ 株価データを取得中...', thread_ts='thread_ts_test')
+call(text='⏳ ニュースデータを収集中 (Reuters, Bloomberg, WSJ)...', thread_ts='thread_ts_test')
+call(text='⏳ レポートと深堀り分析を生成中...', thread_ts='thread_ts_test')
+call(text='⏳ 動画用台本と字幕を生成中 (タイツ風)...', thread_ts='thread_ts_test')
+call(text='⏳ ファイルを保存・アップロード中...', thread_ts='thread_ts_test')
+call(text='✅ レポート生成が完了しました！', thread_ts='thread_ts_test')
+.
+----------------------------------------------------------------------
+Ran 1 test in 1.361s
+
+OK

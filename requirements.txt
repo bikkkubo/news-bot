@@ -1,0 +1,11 @@
+python-dotenv
+yfinance
+newsapi-python
+slack-bolt
+google-generativeai
+openai
+anthropic
+google-api-python-client
+google-auth-httplib2
+google-auth-oauthlib
+pytest
