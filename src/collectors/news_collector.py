@@ -53,17 +53,46 @@ class NewsDataCollector:
         except Exception as e:
             logger.error(f"Error fetching news from NewsAPI: {e}")
 
-        # Filter articles based on keywords
-        from src.config import EXCLUDED_KEYWORDS
+        # Filter articles based on keywords and time
+        # Filter articles based on keywords and time
+        from src.config import EXCLUDED_KEYWORDS, NON_US_KEYWORDS
+        from datetime import datetime, timedelta, timezone
+        import dateutil.parser
+
+        # 12-hour window check (Temporarily set to 48h for testing as sample data is old)
+        cutoff_time = datetime.now(timezone.utc) - timedelta(hours=48)
         
         filtered_articles = []
         for article in all_articles:
             title = article['title'].lower()
             description = (article['description'] or "").lower()
             
-            # Check for excluded keywords
+            # 1. Time Check
+            try:
+                pub_date = dateutil.parser.parse(article['publishedAt'])
+                if pub_date < cutoff_time:
+                    logger.info(f"Skipping old article: {article['title']} ({article['publishedAt']})")
+                    continue
+            except Exception as e:
+                logger.warning(f"Date parsing failed for {article['title']}: {e}")
+                # If date parsing fails, we might skip or keep. Let's keep to be safe but log it.
+                pass
+
+            # 2. Lifestyle/Irrelevant Check
             if any(keyword in title for keyword in EXCLUDED_KEYWORDS):
                 logger.info(f"Skipping lifestyle/irrelevant article: {article['title']}")
+                continue
+
+            # 3. Non-US/UK Check
+            # If title contains UK keywords, check if it ALSO contains US keywords.
+            # If ONLY UK keywords are present, skip it.
+            us_safe_keywords = ["us", "u.s.", "american", "wall street", "fed ", "federal reserve", "dollar", "nasdaq", "nyse", "dow"]
+            
+            has_non_us = any(k in title for k in NON_US_KEYWORDS)
+            has_us_safe = any(k in title for k in us_safe_keywords)
+            
+            if has_non_us and not has_us_safe:
+                logger.info(f"Skipping non-US (UK/EU) article: {article['title']}")
                 continue
                 
             filtered_articles.append(article)
@@ -80,7 +109,23 @@ class NewsDataCollector:
             else:
                 logger.info(f"Duplicate article skipped: {title}")
 
-        return unique_articles
+        # --- Web Search Enrichment ---
+        # Only enrich the top N articles to save time/bandwidth
+        # Since we filter heavily, we might have fewer articles, but let's limit to be safe.
+        from src.services.search_service import SearchService
+        search_service = SearchService()
+        
+        enriched_articles = []
+        # Limit enrichment to top 15 to match report generation limit
+        for i, article in enumerate(unique_articles):
+            if i < 15:
+                logger.info(f"Enriching article {i+1}/{len(unique_articles)}: {article['title']}")
+                enriched_article = search_service.enrich_article(article)
+                enriched_articles.append(enriched_article)
+            else:
+                enriched_articles.append(article)
+
+        return enriched_articles
 
 if __name__ == "__main__":
     # Simple test

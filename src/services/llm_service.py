@@ -93,7 +93,7 @@ class LLMService:
         messages = [{"role": "user", "content": prompt}]
         kwargs = {
             # Reverting to stable model
-            model="claude-3-5-sonnet-20241022",
+            "model": "claude-3-5-sonnet-20241022",
             "max_tokens": 4000,
             "messages": messages,
             "temperature": temperature
@@ -126,12 +126,12 @@ class LLMService:
     @staticmethod
     def get_fact_extraction_system_prompt() -> str:
         return """
-You are a strict financial analyst AI. Your task is to extract and report financial news based ONLY on the provided source text.
+You are a strict financial analyst AI. Your task is to extract and report financial news based on the provided source text and any additional context.
 
 CRITICAL RULES:
-1. **FACTS ONLY**: Report only confirmed facts, numbers, and official announcements.
-2. **NO OPINIONS**: Remove all analyst opinions, predictions, personal views, and "market sentiment" fluff unless it is a direct quote of a significant figure (e.g., Fed Chair).
-3. **NO HALLUCINATIONS**: Do not invent any details. If it's not in the text, do not write it.
+1. **FACTS FIRST**: Prioritize confirmed facts, numbers, and official announcements.
+2. **BEST EFFORT REPORTING**: If specific financial data is missing, report the qualitative facts (who, what, where, why) found in the text. Do NOT refuse to generate a report just because numbers are missing.
+3. **NO HALLUCINATIONS**: Do not invent numbers or details not present in the text.
 4. **SOURCE ATTRIBUTION**: You must embed the source URL in the text using the format `([Source Name](URL))`.
 5. **MARKET NAMES**: Use specific market names (e.g., "ナスダック総合指数" instead of "ナスダック").
 6. **LANGUAGE**: Output in Japanese.

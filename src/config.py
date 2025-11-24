@@ -53,6 +53,11 @@ EXCLUDED_KEYWORDS = [
     "deal of the day", "shopping", "workout", "health"
 ]
 
+NON_US_KEYWORDS = [
+    "uk", "britain", "london", "england", "europe", "eu", "german", "france", 
+    "ecb", "bank of england", "brexit"
+]
+
 # Validation
 def validate_config():
     missing = []
