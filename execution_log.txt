@@ -1,24 +1,28 @@
 [0.00s] Starting V7.2 News Report System...
 [0.02s] Google Service Account JSON not found. Drive upload disabled.
-[1.06s] Stock data fetched: ['ダウ平均株価', 'ナスダック総合指数', 'S&P 500', '日経平均株価']
-[31.22s] News items fetched: 10
-[31.22s] Starting report generation...
-[31.22s] Generating market overview...
-[36.16s] Generating deep dive analysis for 10 news items...
-[36.16s] Processing news item 1: BHP Group Said to Make New Takeover Approach to Anglo American
-[45.52s] Processing news item 2: G20: Japan's Takaichi Embraces Meloni And Keeps Distance From China
-[55.10s] Processing news item 3: Ukraine Seeks NATO-like Shield From US, Counter-Proposal Says
-[65.45s] Processing news item 4: Saudi Prince Faces Big Task Turning Trump Pledges Into Real Wins
-[74.45s] Processing news item 5: Trump’s Attacks Push India, Brazil, South Africa Closer Together
-[84.18s] Processing news item 6: Musk Says Tesla Nears AI5 Chip Tape Out, Starting Work on AI6
-[94.90s] Processing news item 7: The Anti-Meloni Coalition Is Starting to Come Together in Italy
-[106.87s] Processing news item 8: MBK Said to Get Notice of Heavy Sanctions Linked to Homeplus
-[117.22s] Processing news item 9: Carlyle Group Targeting $300 Million for India Side Fund
-[128.08s] Processing news item 10: Japan PM Takaichi to Be Proactive With Yen Intervention, Panelist Says
-[145.09s] Generating conclusion...
-[151.54s] Report generation completed.
-[151.55s] Generating video script...
-[162.74s] Generating slide text...
-[167.65s] Saved local file: output/20251124_21:42/20251124_21:42_report.md
-[167.65s] Saved local file: output/20251124_21:42/20251124_21:42_script.txt
-[167.66s] Saved local file: output/20251124_21:42/20251124_21:42_subtitles.txt
+[0.87s] Stock data fetched: ['ダウ平均株価', 'ナスダック総合指数', 'S&P 500', '日経平均株価']
+[24.73s] News items fetched: 8
+[24.73s] Starting report generation...
+[24.73s] Identifying market themes...
+[31.74s] Identified themes: 1. AI関連の期待と不安: ナスダック総合指数の大幅上昇（1.67%）は、AI関連株に対する期待が続いていることを示しているが、Nvidiaに関するニュースが、今後のAI取引に不安をもたらしている可能性があるため、全体の市場に混乱が生じている。([Source Name](URL)).
+
+2. 地政学的緊張: トランプのウクライナ和平計画やロシアとの秘密交渉に関するニュースが、地政学的リスクを高め、投資家の不安を煽っている。オプション市場での不安の高まりも、これに関連している可能性がある。([Source Name](URL)).
+
+3. 日本市場の独自動向: 日経平均株価が-2.4%の下落を記録したことは、日本市場が他の国際市場とは異なった独自の動向を示していることを示唆している。G20での日本の外交姿勢も、投資家心理に影響を与えた可能性がある。([Source Name](URL)).
+[31.74s] Generating market overview...
+[43.62s] Generating deep dive analysis for 8 news items...
+[43.62s] Processing news item 1: Options Market Signals Growing Anxiety After Week of Wild Swings
+[58.28s] Processing news item 2: Real Madrid Proposes Selling a Stake to Gauge Club’s Valuation
+[75.58s] Processing news item 3: Trump's Ukraine Peace Plan Followed Weeks Of Secret Talks With Russia
+[87.46s] Processing news item 4: Nvidia Didn’t Save the Market. What’s Next for the AI Trade?
+[99.98s] Processing news item 5: Traders Hunt for the Next Argentina With Trump Sway Shaping Bets
+[115.01s] Processing news item 6: Zuma’s Daughter Faces Legal Action Over Russia Recruitment Drive
+[125.87s] Processing news item 7: BHP Group Said to Make New Takeover Approach to Anglo American
+[137.09s] Processing news item 8: G20: Japan's Takaichi Embraces Meloni And Keeps Distance From China
+[152.00s] Generating conclusion...
+[159.62s] Report generation completed.
+[159.62s] Generating video script...
+[177.34s] Generating slide text...
+[185.02s] Saved local file: output/20251125_00:24/20251125_00:24_report.md
+[185.02s] Saved local file: output/20251125_00:24/20251125_00:24_script.txt
+[185.02s] Saved local file: output/20251125_00:24/20251125_00:24_subtitles.txt

@@ -50,7 +50,10 @@ EXCLUDED_KEYWORDS = [
     "gift", "travel", "cruise", "review", "best of", "lifestyle", 
     "sport", "entertainment", "fashion", "movie", "music", 
     "recipe", "food", "drink", "vacation", "holiday", "guide",
-    "deal of the day", "shopping", "workout", "health"
+    "deal of the day", "shopping", "workout", "health",
+    "nfl", "nba", "mlb", "nhl", "soccer", "football", "baseball", 
+    "basketball", "tennis", "golf", "olympic", "championship", 
+    "tournament", "league", "cup", "match", "game", "player", "coach"
 ]
 
 NON_US_KEYWORDS = [
