@@ -119,11 +119,15 @@ If there are stock price movements, official statements, or market reactions tha
 - If no new information is available, write "特になし".]
 
 **市場への影響（深堀り）**:
-- **プラスの理由**: ...
-- **マイナスの理由**: ...
-- **懸念事項**: ...
-- **影響を受けるセクター/銘柄**: ...
-- **短期・長期の影響**: ...
+[This section is CRITICAL. Do NOT be generic.
+- **プラスの理由**: [Explain WHY it is positive with logic. Cite sources if available.]
+- **マイナスの理由**: [Explain WHY it is negative with logic. Cite sources if available.]
+- **懸念事項**: [Specific risks, e.g., regulatory hurdles, competitor moves.]
+- **影響を受けるセクター/銘柄**: [List specific sectors or related companies and explain the correlation.]
+- **短期・長期の影響**: [Differentiate between immediate reaction and long-term structural changes.]
+**REQUIREMENT**:
+- Provide LOGICAL explanations (e.g., "Revenue is up, BUT margins are down due to AI costs, so stock fell").
+- If a specific analyst or report is mentioned in the search context, cite them (e.g., "According to Morgan Stanley...").]
 
 **投資家への示唆**:
 [Concrete implications based on facts]

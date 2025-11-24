@@ -1,24 +1,24 @@
 [0.00s] Starting V7.2 News Report System...
-[0.03s] Google Service Account JSON not found. Drive upload disabled.
-[0.89s] Stock data fetched: ['ダウ平均株価', 'ナスダック総合指数', 'S&P 500', '日経平均株価']
-[46.82s] News items fetched: 10
-[46.82s] Starting report generation...
-[46.82s] Generating market overview...
-[55.45s] Generating deep dive analysis for 10 news items...
-[55.45s] Processing news item 1: G20: Japan's Takaichi Embraces Meloni And Keeps Distance From China
-[65.50s] Processing news item 2: Ukraine Seeks NATO-like Shield From US, Counter-Proposal Says
-[74.50s] Processing news item 3: Saudi Prince Faces Big Task Turning Trump Pledges Into Real Wins
-[83.57s] Processing news item 4: Trump’s Attacks Push India, Brazil, South Africa Closer Together
-[94.60s] Processing news item 5: Musk Says Tesla Nears AI5 Chip Tape Out, Starting Work on AI6
-[105.53s] Processing news item 6: The Anti-Meloni Coalition Is Starting to Come Together in Italy
-[114.97s] Processing news item 7: MBK Said to Get Notice of Heavy Sanctions Linked to Homeplus
-[125.69s] Processing news item 8: Carlyle Group Targeting $300 Million for India Side Fund
-[136.13s] Processing news item 9: Japan PM Takaichi to Be Proactive With Yen Intervention, Panelist Says
-[149.56s] Processing news item 10: New Zealand PM Luxon Pledges to Increase Pension Savings Scheme
-[160.74s] Generating conclusion...
-[171.85s] Report generation completed.
-[171.86s] Generating video script...
-[190.27s] Generating subtitles...
-[202.82s] Saved local file: output/20251124_20:58/20251124_20:58_report.md
-[202.82s] Saved local file: output/20251124_20:58/20251124_20:58_script.txt
-[202.82s] Saved local file: output/20251124_20:58/20251124_20:58_subtitles.txt
+[0.02s] Google Service Account JSON not found. Drive upload disabled.
+[0.90s] Stock data fetched: ['ダウ平均株価', 'ナスダック総合指数', 'S&P 500', '日経平均株価']
+[32.32s] News items fetched: 10
+[32.32s] Starting report generation...
+[32.32s] Generating market overview...
+[38.26s] Generating deep dive analysis for 10 news items...
+[38.26s] Processing news item 1: BHP Group Said to Make New Takeover Approach to Anglo American
+[51.78s] Processing news item 2: G20: Japan's Takaichi Embraces Meloni And Keeps Distance From China
+[62.46s] Processing news item 3: Ukraine Seeks NATO-like Shield From US, Counter-Proposal Says
+[72.87s] Processing news item 4: Saudi Prince Faces Big Task Turning Trump Pledges Into Real Wins
+[82.03s] Processing news item 5: Trump’s Attacks Push India, Brazil, South Africa Closer Together
+[93.62s] Processing news item 6: Musk Says Tesla Nears AI5 Chip Tape Out, Starting Work on AI6
+[104.80s] Processing news item 7: The Anti-Meloni Coalition Is Starting to Come Together in Italy
+[113.22s] Processing news item 8: MBK Said to Get Notice of Heavy Sanctions Linked to Homeplus
+[121.72s] Processing news item 9: Carlyle Group Targeting $300 Million for India Side Fund
+[134.68s] Processing news item 10: Japan PM Takaichi to Be Proactive With Yen Intervention, Panelist Says
+[145.50s] Generating conclusion...
+[151.86s] Report generation completed.
+[151.86s] Generating video script...
+[160.32s] Generating subtitles...
+[173.99s] Saved local file: output/20251124_21:09/20251124_21:09_report.md
+[173.99s] Saved local file: output/20251124_21:09/20251124_21:09_script.txt
+[173.99s] Saved local file: output/20251124_21:09/20251124_21:09_subtitles.txt
