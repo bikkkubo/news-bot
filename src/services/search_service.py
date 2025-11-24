@@ -10,14 +10,21 @@ class SearchService:
     def __init__(self):
         self.ddgs = DDGS()
 
-    def search_news_context(self, query: str, max_results: int = 5) -> str:
+    def search_news_context(self, query: str, ticker: str = None, max_results: int = 5) -> str:
         """
         Search for additional context using DuckDuckGo.
         Returns a combined string of snippets.
         """
         try:
-            # Add "latest update stock price" to query to find fresh info and numbers
-            search_query = f"{query} latest update stock price financial news"
+            # Construct high-precision query
+            # Add (Bloomberg OR Reuters OR "Wall Street Journal") to prioritize high-quality syndicated content
+            sources_hint = '(Bloomberg OR Reuters OR "Wall Street Journal")'
+            
+            if ticker:
+                search_query = f"${ticker} stock price reaction {query} {sources_hint}"
+            else:
+                search_query = f"{query} latest update stock price {sources_hint}"
+            
             logger.info(f"Searching web for: {search_query}")
             
             results = self.ddgs.text(search_query, max_results=max_results)
@@ -39,7 +46,7 @@ class SearchService:
             logger.error(f"Web search failed for '{query}': {e}")
             return f"Search failed: {e}"
 
-    def enrich_article(self, article: Dict[str, Any]) -> Dict[str, Any]:
+    def enrich_article(self, article: Dict[str, Any], ticker: str = None) -> Dict[str, Any]:
         """
         Add search context to an article dictionary.
         """
@@ -48,7 +55,7 @@ class SearchService:
         
         title = article.get('title', '')
         if title:
-            context = self.search_news_context(title)
+            context = self.search_news_context(title, ticker=ticker)
             article['search_context'] = context
         else:
             article['search_context'] = "No title to search."

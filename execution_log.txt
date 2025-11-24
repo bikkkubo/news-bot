@@ -1,23 +1,24 @@
 [0.00s] Starting V7.2 News Report System...
 [0.03s] Google Service Account JSON not found. Drive upload disabled.
-[1.10s] Stock data fetched: ['ダウ平均株価', 'ナスダック総合指数', 'S&P 500', '日経平均株価']
-[22.34s] News items fetched: 9
-[22.34s] Starting report generation...
-[22.34s] Generating market overview...
-[28.96s] Generating deep dive analysis for 9 news items...
-[28.96s] Processing news item 1: Trump’s Attacks Push India, Brazil, South Africa Closer Together
-[38.56s] Processing news item 2: Musk Says Tesla Nears AI5 Chip Tape Out, Starting Work on AI6
-[49.18s] Processing news item 3: The Anti-Meloni Coalition Is Starting to Come Together in Italy
-[60.33s] Processing news item 4: MBK Said to Get Notice of Heavy Sanctions Linked to Homeplus
-[83.88s] Processing news item 5: Carlyle Group Targeting $300 Million for India Side Fund
-[92.46s] Processing news item 6: Japan PM Takaichi to Be Proactive With Yen Intervention, Panelist Says
-[98.97s] Processing news item 7: US Retail Sales Are Proving Resilient While Risks Mount
-[106.76s] Processing news item 8: Six Big Takeaways From COP30 Climate Talks
-[116.92s] Processing news item 9: PE Firms Flood Junk Debt Market to Pay Themselves: Credit Weekly
-[125.90s] Generating conclusion...
-[134.92s] Report generation completed.
-[134.92s] Generating video script...
-[146.40s] Generating subtitles...
-[163.61s] Saved local file: output/20251124_18:41/20251124_18:41_report.md
-[163.61s] Saved local file: output/20251124_18:41/20251124_18:41_script.txt
-[163.61s] Saved local file: output/20251124_18:41/20251124_18:41_subtitles.txt
+[0.89s] Stock data fetched: ['ダウ平均株価', 'ナスダック総合指数', 'S&P 500', '日経平均株価']
+[46.82s] News items fetched: 10
+[46.82s] Starting report generation...
+[46.82s] Generating market overview...
+[55.45s] Generating deep dive analysis for 10 news items...
+[55.45s] Processing news item 1: G20: Japan's Takaichi Embraces Meloni And Keeps Distance From China
+[65.50s] Processing news item 2: Ukraine Seeks NATO-like Shield From US, Counter-Proposal Says
+[74.50s] Processing news item 3: Saudi Prince Faces Big Task Turning Trump Pledges Into Real Wins
+[83.57s] Processing news item 4: Trump’s Attacks Push India, Brazil, South Africa Closer Together
+[94.60s] Processing news item 5: Musk Says Tesla Nears AI5 Chip Tape Out, Starting Work on AI6
+[105.53s] Processing news item 6: The Anti-Meloni Coalition Is Starting to Come Together in Italy
+[114.97s] Processing news item 7: MBK Said to Get Notice of Heavy Sanctions Linked to Homeplus
+[125.69s] Processing news item 8: Carlyle Group Targeting $300 Million for India Side Fund
+[136.13s] Processing news item 9: Japan PM Takaichi to Be Proactive With Yen Intervention, Panelist Says
+[149.56s] Processing news item 10: New Zealand PM Luxon Pledges to Increase Pension Savings Scheme
+[160.74s] Generating conclusion...
+[171.85s] Report generation completed.
+[171.86s] Generating video script...
+[190.27s] Generating subtitles...
+[202.82s] Saved local file: output/20251124_20:58/20251124_20:58_report.md
+[202.82s] Saved local file: output/20251124_20:58/20251124_20:58_script.txt
+[202.82s] Saved local file: output/20251124_20:58/20251124_20:58_subtitles.txt

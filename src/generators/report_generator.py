@@ -89,6 +89,7 @@ Analyze the following news article and generate a detailed report section.
 
 Article Title: {item['title']}
 Source: {item['source']}
+Published At: {item['publishedAt']}
 URL: {item['url']}
 Content: {item['description']}
 {item.get('content', '')}
@@ -97,12 +98,11 @@ Additional Context (from Web Search):
 {item.get('search_context', 'No additional context available.')}
 
 Output Format (Markdown):
-### {i}. [Translated Japanese Title]
+### {i}. [Translated Japanese Title] ([Published Date in JST])
 
 **企業情報**:
 - **[Company Name] ([Ticker])**: [Market Cap], [Sector]
 
-**ニュース概要**:
 **ニュース概要**:
 [Provide a comprehensive and detailed summary. Do NOT summarize too briefly. You MUST include ALL specific numbers, dates, percentages, and financial figures found in the text.
 **CROSS-REFERENCE INSTRUCTIONS**:
@@ -111,6 +111,12 @@ Output Format (Markdown):
 - **STRICTLY EXCLUDE** any personal opinions, feelings, or "analysis" from reporters in the search results. Extract ONLY the facts (numbers, quotes, events).
 - Do not omit details for brevity. The goal is to provide a "deep dive" reading experience.
 - MUST embed source link like ([Source Name]({item['url']})) at the end of sentences.]
+
+**【その後の動き・最新アップデート】**:
+[Compare the "Published At" date with the information in "Additional Context".
+If there are stock price movements, official statements, or market reactions that happened AFTER the original news:
+- Report them here with specific numbers (e.g., "The next day, stock fell X%").
+- If no new information is available, write "特になし".]
 
 **市場への影響（深堀り）**:
 - **プラスの理由**: ...

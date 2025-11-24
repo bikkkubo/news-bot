@@ -113,14 +113,28 @@ class NewsDataCollector:
         # Only enrich the top N articles to save time/bandwidth
         # Since we filter heavily, we might have fewer articles, but let's limit to be safe.
         from src.services.search_service import SearchService
+        from src.services.llm_service import LLMService
+        
         search_service = SearchService()
+        llm_service = LLMService() # Initialize LLM service for ticker extraction
         
         enriched_articles = []
         # Limit enrichment to top 15 to match report generation limit
         for i, article in enumerate(unique_articles):
             if i < 15:
                 logger.info(f"Enriching article {i+1}/{len(unique_articles)}: {article['title']}")
-                enriched_article = search_service.enrich_article(article)
+                
+                # 1. Extract Ticker
+                ticker = llm_service.extract_ticker(article['title'])
+                if ticker:
+                    logger.info(f"Extracted Ticker: {ticker}")
+                    article['ticker'] = ticker
+                else:
+                    logger.info("No ticker found.")
+                    article['ticker'] = None
+
+                # 2. Enrich with Search (passing ticker)
+                enriched_article = search_service.enrich_article(article, ticker=ticker)
                 enriched_articles.append(enriched_article)
             else:
                 enriched_articles.append(article)

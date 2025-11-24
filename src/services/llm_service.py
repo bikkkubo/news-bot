@@ -121,6 +121,35 @@ class LLMService:
             logger.error(f"Failed to parse JSON from LLM response: {cleaned_text}")
             raise e
 
+    def extract_ticker(self, text: str) -> Optional[str]:
+        """
+        Extract the primary stock ticker from the given text using a high-quality model.
+        Returns the ticker symbol (e.g., "AAPL") or None if not found.
+        """
+        prompt = f"""
+Identify the primary publicly traded company mentioned in the following news text and return its stock ticker symbol.
+If multiple companies are mentioned, choose the most relevant one.
+If no public company is mentioned, return "None".
+
+Text: {text}
+
+Output format: Just the ticker symbol (e.g., AAPL) or "None". No other text.
+"""
+        try:
+            # Use generate_text which defaults to the configured high-quality provider (OpenAI/Claude)
+            ticker = self.generate_text(prompt, temperature=0.0).strip()
+            
+            # Basic cleanup
+            ticker = ticker.replace('"', '').replace("'", "").replace(".", "")
+            
+            if ticker.lower() == "none":
+                return None
+            
+            return ticker
+        except Exception as e:
+            logger.error(f"Ticker extraction failed: {e}")
+            return None
+
     # --- Prompts ---
 
     @staticmethod
