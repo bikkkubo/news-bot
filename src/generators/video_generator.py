@@ -33,32 +33,48 @@ News Items:
 Requirements:
 1. **Persona**: You are "Taitsu". Start with "皆さん、こんにちは。タイツです。"
 2. **Structure**:
-   - Opening
-   - News segments (Introduce each news item clearly).
-   - **Image Placeholder**: For EACH news item, insert `[画像を表示: URL]` immediately after the title introduction.
+   - Opening: Brief market overview.
+   - News segments:
+     - **Hook**: Start with a compelling question or statement.
+     - **Core Fact**: What happened? (Concise)
+     - **Deep Dive (CRITICAL)**: Explain *WHY* this matters. What is the context? What are the implications? (Like a tech visionary explaining the future).
+     - **Image Placeholder**: Insert `[画像を表示: URL]` at relevant points.
    - Closing: End with "タイツでした。"
-3. **Tone**: Professional, engaging, "です・ます".
-4. **Language**: Japanese.
+3. **Tone**: Professional, insightful, visionary, yet accessible ("です・ます").
+4. **Content Depth**: Do NOT just read the news. Provide *interpretation* and *insight*. Connect the dots for the viewer.
+5. **Language**: Japanese.
 """
         return self.llm.generate_text(prompt, system_prompt=self.llm.get_taitsu_persona_system_prompt())
 
     def generate_subtitles(self, script: str) -> str:
         """
-        Generates subtitles from the script.
-        Format: [字幕X] Text...
+        Generates visual slide text (titles/bullets) from the script.
         """
-        self.logger.log("Generating subtitles...")
+        self.logger.log("Generating slide text...")
         
         prompt = f"""
-Convert the following video script into a subtitle list.
+Convert the following video narration script into "Visual Slide Text" for a video.
+The goal is to create text that can be copy-pasted into video slides (like PowerPoint or YouTube text overlays).
 
 Script:
 {script}
 
 Requirements:
-1. **Format**: Each line should start with `[字幕X]` (e.g., `[字幕1]`, `[字幕2]`).
-2. **Granularity**: Split long sentences into readable chunks (20-30 chars max per line).
-3. **Content**: Keep the exact wording of the script.
-4. **Images**: If there is `[画像を表示: URL]`, output it as `[画像X] URL` on its own line.
+1. **Format**: Group by scenes/news items.
+   - Use `[スライドX]` to mark a new visual scene.
+2. **Content**:
+   - **Title**: A short, catchy headline for the slide.
+   - **Body**: 3-4 concise bullet points summarizing the key information.
+   - **Visuals**: Keep `[画像を表示: URL]` tags where they appear.
+3. **Style**: Concise, high-impact text. NO long sentences. Use noun phrases (体言止め) where appropriate.
+4. **Relationship**: The Slide Text should be the "visual summary" of what is being spoken in the script.
+
+Example Output:
+[スライド1]
+タイトル: 米国市場、大幅反発
+- ダウ平均 500ドル高
+- インフレ懸念が後退
+- テック株が主導
+[画像を表示: URL]
 """
-        return self.llm.generate_text(prompt)
+        return self.llm.generate_text(prompt, system_prompt=self.llm.get_taitsu_persona_system_prompt())
